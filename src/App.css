@@ -1,12 +1,23 @@
 :root {
-    --color-dark-green: #1A4938;
-    --color-middle-green: #BCC2A3;
-    --color-light-green: #F7F9DE;
-    --color-text: ;
-    --color-bg: ;
+  --color-dark-green: #1a4938;
+  --color-middle-green: #bcc2a3;
+  --color-light-green: #f7f9de;
+  --color-text: ;
+  --color-bg: ;
 }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.appContent {
+  flex: 1;
+  width: 100%;
 }
