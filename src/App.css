@@ -1,0 +1,12 @@
+:root {
+    --color-dark-green: #1A4938;
+    --color-middle-green: #BCC2A3;
+    --color-light-green: #F7F9DE;
+    --color-text: ;
+    --color-bg: ;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}

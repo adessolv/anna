@@ -1,0 +1,48 @@
+/* .headerNavItem {
+    background-color: var(--color-light-green);
+} */
+
+.headerNavLink {
+    color: var(--color-dark-green);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.headerWrap {
+    display: flex;
+}
+
+.headerNav {
+    padding: 20px;
+}
+
+.headerNavList {
+    display: flex;
+    gap: 40px;
+}
+
+.langChange {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.langChangeBtn {
+    background-color: var(--color-light-green);
+    color: var(--color-dark-green);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.langChangeBtnActive {
+    background-color: var(--color-middle-green);
+}
