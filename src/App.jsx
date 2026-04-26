@@ -1,14 +1,16 @@
 import Header from "./Components/Header/Header";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Hero/Hero";
 
 function App() {
   return (
     <div className="appShell">
       <main className="container appContent">
         <Header />
-        <h1>Anna</h1>
+        <Hero />
       </main>
+
       <Footer />
     </div>
   );
