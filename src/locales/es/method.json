@@ -1,0 +1,41 @@
+{
+  "title": "El método del cuerpo vivo",
+  "text": {
+    "first": "Mi método se basa en una comprensión profunda de la biomecánica y del aprendizaje somático. No solo hacemos ejercicios, sino que reprogramamos los patrones habituales de movimiento.",
+    "second": "Es un trabajo con la atención, el sistema nervioso y la gracia natural del cuerpo. Está pensado para quienes buscan un resultado duradero y no solo un alivio temporal."
+  },
+  "reviewsLabel": "Testimonio de alumna",
+  "reviews": [
+    {
+      "name": "Olga",
+      "age": "34 años",
+      "text": "Después de las clases, por primera vez en muchos años, dejé de sentir tensión en la zona lumbar. Cada movimiento se volvió ligero y natural."
+    },
+    {
+      "name": "Elena",
+      "age": "42 años",
+      "text": "Un enfoque sutil y una gran atención a los detalles. María percibe el cuerpo en profundidad y ayuda a escuchar lo que realmente necesita."
+    }
+  ],
+  "schedule": {
+    "title": "Horario y precios",
+    "button": "Reservar plaza",
+    "items": [
+      {
+        "name": "Grupo de adultos",
+        "schedule": "Lun/Jue, 19:00",
+        "price": "1200 ₽"
+      },
+      {
+        "name": "Somática infantil",
+        "schedule": "Mié/Sáb, 16:00",
+        "price": "900 ₽"
+      },
+      {
+        "name": "Sesión individual",
+        "schedule": "Con cita previa",
+        "price": "3500 ₽"
+      }
+    ]
+  }
+}

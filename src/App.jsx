@@ -2,6 +2,7 @@ import Header from "./Components/Header/Header";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
+import Method from "./Components/Method/Method";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main className="container appContent">
         <Header />
         <Hero />
+        <Method />
       </main>
 
       <Footer />

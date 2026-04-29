@@ -1,0 +1,41 @@
+{
+  "title": "The Living Body Method",
+  "text": {
+    "first": "My method is based on a deep understanding of biomechanics and somatic learning. We do not just perform exercises — we rewire habitual movement patterns.",
+    "second": "This is work with attention, the nervous system, and the body’s natural grace. It is for those who seek lasting results rather than temporary relief."
+  },
+  "reviewsLabel": "Student review",
+  "reviews": [
+    {
+      "name": "Olga",
+      "age": "34 years old",
+      "text": "After the classes, for the first time in many years, I stopped feeling tension in my lower back. Every movement became light and natural."
+    },
+    {
+      "name": "Elena",
+      "age": "42 years old",
+      "text": "A subtle approach and real attention to detail. Maria sees the body deeply and helps you hear what it truly needs."
+    }
+  ],
+  "schedule": {
+    "title": "Schedule and pricing",
+    "button": "Reserve your spot",
+    "items": [
+      {
+        "name": "Adult group",
+        "schedule": "Mon/Thu, 7:00 PM",
+        "price": "1200 ₽"
+      },
+      {
+        "name": "Children’s somatics",
+        "schedule": "Wed/Sat, 4:00 PM",
+        "price": "900 ₽"
+      },
+      {
+        "name": "Private session",
+        "schedule": "By appointment",
+        "price": "3500 ₽"
+      }
+    ]
+  }
+}

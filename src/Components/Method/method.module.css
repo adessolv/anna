@@ -1,0 +1,220 @@
+.section {
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 300;
+  color: var(--color-artistic-ink, #1f1b16);
+  font-family: serif;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 720px;
+}
+
+.textBlock p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-stone-600, #78716c);
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--color-artistic-border, rgba(0, 0, 0, 0.08));
+}
+
+.reviewHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+}
+
+.reviewLabel {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-artistic-accent, #b07a56);
+}
+
+.reviewAuthor {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--color-artistic-muted, #8b7e74);
+}
+
+.reviewText {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--color-artistic-ink, #1f1b16);
+}
+
+.scheduleCard {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px;
+  border-radius: 40px;
+  background: var(--color-artistic-dark, #1f1b16);
+  color: #fff;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.scheduleTitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: serif;
+  font-weight: 400;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.scheduleItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.scheduleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scheduleName {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.scheduleTime {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.schedulePrice {
+  font-size: 20px;
+  font-family: serif;
+}
+
+.scheduleButton {
+  display: block;
+  text-align: center;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  font-weight: 700;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.scheduleButton:hover {
+  background: #fff;
+  color: var(--color-artistic-dark, #1f1b16);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .right {
+    justify-content: flex-start;
+  }
+
+  .scheduleCard {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 72px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviewCard {
+    padding: 24px;
+  }
+
+  .scheduleCard {
+    padding: 28px;
+    border-radius: 28px;
+  }
+
+  .scheduleItem {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

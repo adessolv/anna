@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import styles from "./Hero.module.css";
+import styles from "./hero.module.css";
 
 const Hero = () => {
   const { t } = useTranslation("hero");
