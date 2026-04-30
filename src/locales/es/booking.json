@@ -1,0 +1,25 @@
+{
+  "title": {
+    "line1": "¿Listo para empezar",
+    "accent": "tu camino",
+    "line2": "hacia la ligereza?"
+  },
+  "description": "Inscríbete en una clase de prueba o en una consulta. Me pondré en contacto contigo en el plazo de un día laborable.",
+  "success": {
+    "title": "Tu solicitud ha sido recibida",
+    "text": "¡Nos vemos en clase!"
+  },
+  "form": {
+    "name": "Tu nombre",
+    "email": "Email de contacto",
+    "phone": "Teléfono",
+    "directionPlaceholder": "Elige una modalidad",
+    "options": {
+      "adults": "Grupos de adultos",
+      "children_6": "Grupos infantiles (6–8 años)",
+      "children_9": "Grupos infantiles (9–11 años)",
+      "private": "Sesiones individuales"
+    },
+    "submit": "Enviar solicitud"
+  }
+}

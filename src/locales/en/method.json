@@ -1,8 +1,8 @@
 {
-  "title": "The Living Body Method",
+  "title": "Awareness Through Movement",
   "text": {
-    "first": "My method is based on a deep understanding of biomechanics and somatic learning. We do not just perform exercises — we rewire habitual movement patterns.",
-    "second": "This is work with attention, the nervous system, and the body’s natural grace. It is for those who seek lasting results rather than temporary relief."
+    "first": "The Feldenkrais Method is a somatic learning system that uses gentle, mindful movements to improve flexibility, coordination, and posture. The method is based on the principles of neuroplasticity, helping to retrain the nervous system, eliminate maladaptive movement patterns, reduce pain, and restore natural ease and grace of movement.",
+    "second": "Developed by Moshe Feldenkrais, the method is now practiced worldwide. Certified practitioners work in Europe, North and South America, Israel, Australia, and Asia, and the method is used in fields such as health, education, performing arts, and rehabilitation."
   },
   "reviewsLabel": "Student review",
   "reviews": [
@@ -17,24 +17,29 @@
       "text": "A subtle approach and real attention to detail. Maria sees the body deeply and helps you hear what it truly needs."
     }
   ],
-  "schedule": {
-    "title": "Schedule and pricing",
+  "groups": {
+    "title": "Groups and pricing",
     "button": "Reserve your spot",
     "items": [
       {
+        "name": "Individual session",
+        "duration": "Duration: 50 min",
+        "price": "€30"
+      },
+      {
+        "name": "Children’s group (ages 6–8)",
+        "duration": "8 sessions of 40 min",
+        "price": "€60"
+      },
+      {
+        "name": "Children’s group (ages 9–11)",
+        "duration": "8 sessions of 40 min",
+        "price": "€60"
+      },
+      {
         "name": "Adult group",
-        "schedule": "Mon/Thu, 7:00 PM",
-        "price": "1200 ₽"
-      },
-      {
-        "name": "Children’s somatics",
-        "schedule": "Wed/Sat, 4:00 PM",
-        "price": "900 ₽"
-      },
-      {
-        "name": "Private session",
-        "schedule": "By appointment",
-        "price": "3500 ₽"
+        "duration": "4 sessions of 50 min",
+        "price": "€40"
       }
     ]
   }

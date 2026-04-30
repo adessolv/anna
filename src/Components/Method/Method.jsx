@@ -4,66 +4,71 @@ import styles from "./method.module.css";
 
 const Method = () => {
   const { t } = useTranslation("method");
-
+  const groups = t("groups.items", { returnObjects: true });
   const reviews = t("reviews", { returnObjects: true });
-  const schedule = t("schedule.items", { returnObjects: true });
 
   return (
     <section id="method" className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.grid}>
-          <div className={styles.left}>
-            <h2 className={styles.title}>{t("title")}</h2>
+        <div className={styles.content}>
+          <h2 className={styles.title}>{t("title")}</h2>
 
-            <div className={styles.textBlock}>
-              <p>{t("text.first")}</p>
-              <p>{t("text.second")}</p>
-            </div>
+          <div className={styles.textBlock}>
+            <p>{t("text.first")}</p>
+            <p>{t("text.second")}</p>
+          </div>
 
-            <div className={styles.reviewsGrid}>
-              {reviews.map((r, i) => (
-                <motion.div
-                  key={i}
+          <div className={styles.reviews}>
+            <h3 className={styles.reviewsLabel}>{t("reviewsLabel")}</h3>
+
+            <div className={styles.reviewsList}>
+              {reviews.map((item, index) => (
+                <motion.article
+                  key={`${item.name}-${index}`}
+                  className={styles.reviewCard}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className={styles.reviewCard}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, delay: index * 0.08 }}
                 >
-                  <div className={styles.reviewHead}>
-                    <h3 className={styles.reviewLabel}>{t("reviewsLabel")}</h3>
-                    <div className={styles.reviewAuthor}>
-                      {r.name}, {r.age}
-                    </div>
+                  <div className={styles.reviewMeta}>
+                    <span className={styles.reviewName}>{item.name}</span>
+                    <span className={styles.reviewAge}>{item.age}</span>
                   </div>
-
-                  <p className={styles.reviewText}>«{r.text}»</p>
-                </motion.div>
+                  <p className={styles.reviewText}>{item.text}</p>
+                </motion.article>
               ))}
             </div>
           </div>
+        </div>
 
-          <div className={styles.right}>
-            <div className={styles.scheduleCard} id="schedule">
-              <h3 className={styles.scheduleTitle}>{t("schedule.title")}</h3>
+        <div className={styles.sidebar}>
+          <div className={styles.groupsCard}>
+            <h3 className={styles.groupsTitle}>{t("groups.title")}</h3>
 
-              <div className={styles.scheduleList}>
-                {schedule.map((item, i) => (
-                  <div key={i} className={styles.scheduleItem}>
-                    <div className={styles.scheduleInfo}>
-                      <span className={styles.scheduleName}>{item.name}</span>
-                      <span className={styles.scheduleTime}>
-                        {item.schedule}
-                      </span>
-                    </div>
-                    <span className={styles.schedulePrice}>{item.price}</span>
+            <div className={styles.groupsList}>
+              {groups.map((item, index) => (
+                <motion.div
+                  key={`${item.name}-${index}`}
+                  className={styles.groupItem}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.45, delay: index * 0.07 }}
+                >
+                  <div className={styles.groupInfo}>
+                    <span className={styles.groupName}>{item.name}</span>
+                    <span className={styles.groupDuration}>{item.duration}</span>
                   </div>
-                ))}
-              </div>
 
-              <a href="#booking" className={styles.scheduleButton}>
-                {t("schedule.button")}
-              </a>
+                  <div className={styles.groupPrice}>{item.price}</div>
+                </motion.div>
+              ))}
             </div>
+
+            <a href="#booking" className={styles.groupsButton}>
+              {t("groups.button")}
+            </a>
           </div>
         </div>
       </div>

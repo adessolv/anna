@@ -1,220 +1,300 @@
 .section {
-  padding: 96px 0;
+  padding: 48px 0 56px;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 48px;
-}
-
-.grid {
+  padding: 0 32px;
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
+  grid-template-columns: minmax(0, 1.45fr) minmax(420px, 0.85fr);
   gap: 64px;
   align-items: start;
 }
 
-.left {
+.content {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-}
-
-.right {
-  display: flex;
-  justify-content: flex-end;
+  gap: 32px;
+  min-width: 0;
+  padding-top: 4px;
 }
 
 .title {
   margin: 0;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 300;
-  color: var(--color-artistic-ink, #1f1b16);
+  font-size: clamp(34px, 3.2vw, 46px);
+  line-height: 1.05;
+  font-weight: 400;
   font-family: serif;
+  color: #1f1b16;
+  letter-spacing: -0.02em;
+  max-width: none;
+  white-space: nowrap;
 }
 
 .textBlock {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 720px;
+  gap: 26px;
+  max-width: 62ch;
 }
 
 .textBlock p {
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.7;
-  color: var(--color-stone-600, #78716c);
+  color: #5f5951;
 }
 
-.reviewsGrid {
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.reviewsLabel {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8c7769;
+}
+
+.reviewsList {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 22px;
+  align-items: stretch;
 }
 
 .reviewCard {
+  padding: 28px 28px 26px;
+  border-radius: 24px;
+  border: 1px solid rgba(29, 24, 18, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+  min-height: 220px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 32px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid var(--color-artistic-border, rgba(0, 0, 0, 0.08));
 }
 
-.reviewHead {
+.reviewMeta {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  align-items: end;
-  gap: 16px;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.reviewLabel {
-  margin: 0;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-artistic-accent, #b07a56);
-}
-
-.reviewAuthor {
+.reviewName {
   font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b07a56;
+}
+
+.reviewAge {
+  font-size: 12px;
+  line-height: 1.2;
   font-style: italic;
-  color: var(--color-artistic-muted, #8b7e74);
+  color: #6f685f;
+  white-space: nowrap;
 }
 
 .reviewText {
   margin: 0;
-  font-size: 12px;
-  line-height: 1.7;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #2a241d;
   font-style: italic;
-  color: var(--color-artistic-ink, #1f1b16);
+  max-width: 26ch;
 }
 
-.scheduleCard {
+.sidebar {
+  min-width: 0;
+  padding-top: 0;
+}
+
+.groupsCard {
   width: 100%;
-  max-width: 480px;
-  padding: 40px;
-  border-radius: 40px;
-  background: var(--color-artistic-dark, #1f1b16);
-  color: #fff;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  max-width: 448px;
+  margin-left: auto;
+  padding: 40px 38px 40px;
+  border-radius: 36px;
+  background: #474927;
+  color: #f5f2eb;
+  box-shadow: 0 18px 44px rgba(28, 24, 16, 0.16);
 }
 
-.scheduleTitle {
+.groupsTitle {
   margin: 0;
   font-size: 24px;
   line-height: 1.2;
   font-family: serif;
   font-weight: 400;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f5f2eb;
 }
 
-.scheduleList {
+.groupsList {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 22px;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.scheduleItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
+.groupItem {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: end;
 }
 
-.scheduleInfo {
+.groupInfo {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
 }
 
-.scheduleName {
-  font-size: 16px;
-  font-weight: 500;
+.groupName {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #f5f2eb;
 }
 
-.scheduleTime {
-  font-size: 10px;
-  letter-spacing: 0.12em;
+.groupDuration {
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(245, 242, 235, 0.68);
 }
 
-.schedulePrice {
-  font-size: 20px;
+.groupPrice {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 600;
+  color: #f5f2eb;
+  white-space: nowrap;
   font-family: serif;
 }
 
-.scheduleButton {
-  display: block;
-  text-align: center;
-  padding: 16px 20px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
+.groupsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(245, 242, 235, 0.22);
+  color: #f5f2eb;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   font-size: 10px;
   font-weight: 700;
   transition:
-    background-color 0.25s ease,
-    color 0.25s ease;
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.scheduleButton:hover {
-  background: #fff;
-  color: var(--color-artistic-dark, #1f1b16);
+.groupsButton:hover {
+  background: rgba(255, 255, 255, 0.06);
 }
 
-@media (max-width: 1024px) {
-  .grid {
+.groupsButton:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 1100px) {
+  .container {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 36px;
   }
 
-  .right {
-    justify-content: flex-start;
-  }
-
-  .scheduleCard {
+  .groupsCard {
     max-width: 100%;
+    margin-left: 0;
+  }
+
+  .reviewsList {
+    grid-template-columns: 1fr;
+  }
+
+  .reviewCard {
+    min-height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: 72px 0;
+    padding: 36px 0 44px;
   }
 
   .container {
     padding: 0 20px;
+    gap: 28px;
   }
 
-  .reviewsGrid {
-    grid-template-columns: 1fr;
+  .content {
+    gap: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+    max-width: none;
+  }
+
+  .textBlock {
+    gap: 18px;
+  }
+
+  .textBlock p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .reviews {
+    gap: 14px;
   }
 
   .reviewCard {
-    padding: 24px;
+    padding: 22px 20px 20px;
+    border-radius: 20px;
   }
 
-  .scheduleCard {
-    padding: 28px;
+  .reviewText {
+    font-size: 13px;
+    max-width: none;
+  }
+
+  .groupsCard {
+    padding: 26px 22px 24px;
     border-radius: 28px;
   }
 
-  .scheduleItem {
-    align-items: flex-start;
-    flex-direction: column;
+  .groupsTitle {
+    font-size: 22px;
+  }
+
+  .groupsList {
+    gap: 18px;
+    margin-top: 26px;
+    margin-bottom: 28px;
+    padding-top: 18px;
+  }
+
+  .groupPrice {
+    font-size: 20px;
   }
 }

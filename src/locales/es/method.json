@@ -1,8 +1,8 @@
 {
-  "title": "El método del cuerpo vivo",
+  "title": "Autoconciencia a través del Movimiento",
   "text": {
-    "first": "Mi método se basa en una comprensión profunda de la biomecánica y del aprendizaje somático. No solo hacemos ejercicios, sino que reprogramamos los patrones habituales de movimiento.",
-    "second": "Es un trabajo con la atención, el sistema nervioso y la gracia natural del cuerpo. Está pensado para quienes buscan un resultado duradero y no solo un alivio temporal."
+    "first": "El Método Feldenkrais es un sistema de aprendizaje somático que utiliza movimientos suaves y conscientes para mejorar la flexibilidad, la coordinación y la postura. El método se basa en los principios de la neuroplasticidad, ayudando a reeducar el sistema nervioso, eliminar patrones de movimiento inadecuados, reducir el dolor y recuperar la facilidad y la naturalidad del movimiento.",
+    "second": "Desarrollado por Moshe Feldenkrais, el método se practica hoy en todo el mundo. Existen practicantes certificados en Europa, América del Norte y del Sur, Israel, Australia y Asia, y se aplica en ámbitos como la salud, la educación, las artes escénicas y la rehabilitación."
   },
   "reviewsLabel": "Testimonio de alumna",
   "reviews": [
@@ -17,24 +17,29 @@
       "text": "Un enfoque sutil y una gran atención a los detalles. María percibe el cuerpo en profundidad y ayuda a escuchar lo que realmente necesita."
     }
   ],
-  "schedule": {
-    "title": "Horario y precios",
+  "groups": {
+    "title": "Grupos y precios",
     "button": "Reservar plaza",
     "items": [
       {
+        "name": "Clase individual",
+        "duration": "Duración: 50 min",
+        "price": "30 €"
+      },
+      {
+        "name": "Grupo infantil de 6 a 8 años",
+        "duration": "8 clases de 40 min",
+        "price": "60 €"
+      },
+      {
+        "name": "Grupo infantil de 9 a 11 años",
+        "duration": "8 clases de 40 min",
+        "price": "60 €"
+      },
+      {
         "name": "Grupo de adultos",
-        "schedule": "Lun/Jue, 19:00",
-        "price": "1200 ₽"
-      },
-      {
-        "name": "Somática infantil",
-        "schedule": "Mié/Sáb, 16:00",
-        "price": "900 ₽"
-      },
-      {
-        "name": "Sesión individual",
-        "schedule": "Con cita previa",
-        "price": "3500 ₽"
+        "duration": "4 clases de 50 min",
+        "price": "40 €"
       }
     ]
   }

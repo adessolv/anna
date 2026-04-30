@@ -1,0 +1,19 @@
+{
+  "title": "Sobre la profesora",
+  "imageAlt": "Maria Ivanova",
+  "quote": "El movimiento es una forma de conocerse a través del silencio del cuerpo.",
+  "text": {
+    "first": "Maria Ivanova es una profesional certificada en educación somática y especialista en biomecánica funcional. Durante los últimos 12 años ha dedicado su trabajo al estudio de cómo el movimiento puede sanar.",
+    "second": "Su enfoque se valora por su suavidad y precisión. Maria trabaja tanto con adultos que desean liberar tensiones como con niños, ayudándoles a construir una base saludable para el movimiento."
+  },
+  "stats": {
+    "experience": {
+      "value": "12 años",
+      "label": "Experiencia"
+    },
+    "practiceHours": {
+      "value": "500+",
+      "label": "Horas de práctica"
+    }
+  }
+}

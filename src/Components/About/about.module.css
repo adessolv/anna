@@ -1,0 +1,158 @@
+.section {
+  padding: 96px 0;
+  background: rgba(245, 240, 232, 0.3);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.media {
+  position: relative;
+}
+
+.imageWrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.quoteCard {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 200px;
+  padding: 40px;
+  border: 1px solid var(--color-artistic-border, rgba(0, 0, 0, 0.08));
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.quoteText {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--color-artistic-accent, #b07a56);
+  font-family: serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 300;
+  font-family: serif;
+  color: var(--color-artistic-ink, #1f1b16);
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.textBlock p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #78716c;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-artistic-border, rgba(0, 0, 0, 0.08));
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statValue {
+  display: block;
+  font-size: 32px;
+  line-height: 1;
+  font-family: serif;
+  color: var(--color-artistic-ink, #1f1b16);
+}
+
+.statLabel {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-artistic-muted, #8b7e74);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .quoteCard {
+    right: 0;
+    bottom: -24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 72px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .imageWrap {
+    border-radius: 32px;
+  }
+
+  .quoteCard {
+    display: none;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .textBlock p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .statValue {
+    font-size: 28px;
+  }
+}

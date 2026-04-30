@@ -1,0 +1,25 @@
+{
+  "title": {
+    "line1": "Ready to begin",
+    "accent": "your path",
+    "line2": "to ease?"
+  },
+  "description": "Sign up for a trial class or consultation. I’ll get in touch within one business day.",
+  "success": {
+    "title": "Your request has been received",
+    "text": "See you in class!"
+  },
+  "form": {
+    "name": "Your name",
+    "email": "Email for contact",
+    "phone": "Phone",
+    "directionPlaceholder": "Choose a direction",
+    "options": {
+      "adults": "Adult groups",
+      "children_6": "Children’s groups (6–8 years)",
+      "children_9": "Children’s groups (9–11 years)",
+      "private": "Private sessions"
+    },
+    "submit": "Send request"
+  }
+}
