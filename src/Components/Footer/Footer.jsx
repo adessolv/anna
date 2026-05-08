@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 
 function InstagramIcon() {
@@ -21,8 +22,21 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.footerInner} container`}>
         <div className={styles.addressBlock}>
-          <p className={styles.footerTitle}>Gentle Movement Space</p>
-          <address className={styles.address}>Oviedo, Spain</address>
+          <p className={styles.footerTitle}>© 2026 Gentle Movement Space</p>
+
+          <nav className={styles.legalLinks} aria-label="Legal pages">
+            <Link to="/privacy-policy" className={styles.legalLink}>
+              Política de privacidad
+            </Link>
+            <span className={styles.separator}>|</span>
+            <Link to="/legal-notice" className={styles.legalLink}>
+              Aviso legal
+            </Link>
+            <span className={styles.separator}>|</span>
+            <Link to="/terms-and-conditions" className={styles.legalLink}>
+              Términos y condiciones
+            </Link>
+          </nav>
         </div>
 
         <div className={styles.socials}>
@@ -46,10 +60,6 @@ function Footer() {
           </a>
         </div>
       </div>
-
-      <p className={styles.copyright}>
-        © {new Date().getFullYear()} Gentle Movement Space. All rights reserved.
-      </p>
     </footer>
   );
 }
