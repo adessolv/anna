@@ -1,0 +1,82 @@
+{
+  "title": "Privacy Policy",
+  "sections": {
+    "controller": {
+      "title": "1. Data Controller",
+      "meta": {
+        "ownerLabel": "Owner:",
+        "ownerValue": "Anna Afanaseva",
+        "idLabel": "NIF/NIE:",
+        "idValue": "Z2331***Y",
+        "addressLabel": "Address:",
+        "addressValue": "calle Miguel Angel Blanco 62 5A, Oviedo",
+        "emailLabel": "Email:",
+        "emailValue": "annaoffbesp@gmail.com"
+      }
+    },
+    "collectedData": {
+      "title": "2. Personal data collected",
+      "intro": "The following personal data may be collected:",
+      "items": [
+        "Name",
+        "Email address",
+        "Phone number",
+        "Any other information voluntarily provided by the user"
+      ],
+      "text": "Data is collected through contact forms available on the website."
+    },
+    "purpose": {
+      "title": "3. Purpose of data processing",
+      "intro": "The personal data provided will be used to:",
+      "items": [
+        "Handle information requests",
+        "Organize and manage participation in Feldenkrais Method classes",
+        "Contact the user regarding the services offered",
+        "Comply with applicable legal obligations"
+      ]
+    },
+    "legalBasis": {
+      "title": "4. Legal basis",
+      "intro": "Data processing is based on:",
+      "items": [
+        "The user’s consent",
+        "The performance of a contractual relationship (in case of class registration)"
+      ]
+    },
+    "retention": {
+      "title": "5. Data retention",
+      "text": "Data will be retained while the relationship with the user is maintained and for the periods necessary to comply with legal obligations."
+    },
+    "recipients": {
+      "title": "6. Data recipients",
+      "text1": "Data will not be shared with third parties, except when required by law or when necessary for service provision (for example, management or communication tools).",
+      "text2": "No international data transfers are foreseen."
+    },
+    "userRights": {
+      "title": "7. User rights",
+      "intro": "The user has the right to:",
+      "items": [
+        "Access",
+        "Rectification",
+        "Erasure",
+        "Restriction of processing",
+        "Objection"
+      ],
+      "requestPrefix": "To exercise these rights, the user may send a request to:",
+      "requestEmail": "annaoffbesp@gmail.com",
+      "text": "The user also has the right to lodge a complaint with the Spanish Data Protection Authority (AEPD)."
+    },
+    "requiredData": {
+      "title": "8. Mandatory nature of data",
+      "text": "Providing data is voluntary, but necessary in order to respond to user requests."
+    },
+    "security": {
+      "title": "9. Security",
+      "text": "Appropriate technical and organizational measures are applied to ensure the security of personal data."
+    },
+    "changes": {
+      "title": "10. Changes to the policy",
+      "text": "This policy may be updated at any time to adapt to legal or service changes."
+    }
+  }
+}

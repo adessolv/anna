@@ -26,6 +26,8 @@ import classes_ru from "./locales/ru/classes.json";
 import classes_es from "./locales/es/classes.json";
 
 import privacy_es from "./locales/es/privacy-policy.json";
+import privacy_en from "./locales/en/privacy-policy.json";
+import privacy_ru from "./locales/ru/privacy-policy.json";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -36,6 +38,7 @@ i18n.use(initReactI18next).init({
       about: about_en,
       booking: booking_en,
       classes: classes_en,
+      "privacy-policy": privacy_en,
     },
     ru: {
       translation: ru,
@@ -44,6 +47,7 @@ i18n.use(initReactI18next).init({
       about: about_ru,
       booking: booking_ru,
       classes: classes_ru,
+      "privacy-policy": privacy_ru,
     },
     es: {
       translation: es,
