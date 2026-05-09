@@ -1,3 +1,44 @@
+.headerNavItem {
+  position: relative;
+}
+
+.headerNavLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-dark-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  transition:
+    color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.headerNavLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-middle-green);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.headerNavLink:hover::after,
+.headerNavLink:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.headerNavLink:hover,
+.headerNavLink:focus-visible {
+  color: var(--color-middle-green);
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -14,7 +55,7 @@
 .headerContainer {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 16px 0 22px;
+  padding: 8 16px 8 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,47 +119,6 @@
   padding: 0;
 }
 
-.headerNavItem {
-  position: relative;
-}
-
-.headerNavLink {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  color: var(--color-dark-green);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  transition:
-    color 0.25s ease,
-    opacity 0.25s ease;
-}
-
-.headerNavLink::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-middle-green);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.25s ease;
-}
-
-.headerNavLink:hover::after,
-.headerNavLink:focus-visible::after {
-  transform: scaleX(1);
-}
-
-.headerNavLink:hover,
-.headerNavLink:focus-visible {
-  color: var(--color-middle-green);
-}
-
 .langChange {
   display: flex;
   align-items: center;
@@ -127,13 +127,13 @@
 }
 
 .langChangeBtn {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border: 1px solid rgba(82, 103, 84, 0.1);
   border-radius: 999px;
   background-color: rgba(234, 238, 215, 0.82);
   color: var(--color-dark-green);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition:
@@ -142,7 +142,7 @@
     border-color 0.2s ease;
 }
 
-.langChangeBtn:hover,
+.langChangeBtn:not(.langChangeBtnActive):hover,
 .langChangeBtn:focus-visible {
   transform: translateY(-1px);
   background-color: rgba(214, 223, 184, 0.95);
@@ -150,9 +150,9 @@
 }
 
 .langChangeBtnActive {
-  background-color: var(--color-middle-green);
+  background-color: var(--color-artistic-accent);
   color: #fff;
-  border-color: var(--color-middle-green);
+  border-color: var(--color-artistic-accent);
   box-shadow: 0 4px 10px rgba(107, 126, 86, 0.16);
 }
 
