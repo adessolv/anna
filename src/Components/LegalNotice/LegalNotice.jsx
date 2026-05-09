@@ -1,102 +1,100 @@
 import styles from "./LegalNotice.module.css";
+import { useTranslation } from "react-i18next";
 
 const LegalNotice = () => {
+    const { t } = useTranslation("legal");
+
+    const liabilityItems = t("sections.liability.items", { returnObjects: true });
+    const liabilityList = Array.isArray(liabilityItems) ? liabilityItems : [];
+
+    console.log("title:", t("title"));
+    console.log("liabilityItems:", liabilityItems, Array.isArray(liabilityItems));
+
     return (
         <main className={styles.page}>
             <section className={styles.wrapper}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>Aviso Legal</h1>
+                    <h1 className={styles.title}>{t("title")}</h1>
 
                     <div className={styles.content}>
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>1. Datos identificativos</h2>
-                            <p className={styles.text}>
-                                En cumplimiento de la normativa vigente, se informa que este
-                                sitio web es propiedad de:
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.identification.title")}</h2>
+                            <p className={styles.text}>{t("sections.identification.intro")}</p>
+
                             <div className={styles.meta}>
-                                <p><strong>Titular:</strong> Anna Afanaseva</p>
-                                <p><strong>NIF/NIE:</strong> Z2331***Y</p>
-                                <p><strong>Domicilio:</strong> calle Miguel Angel Blanco 62 5A, Oviedo</p>
                                 <p>
-                                    <strong>Correo electrónico:</strong>{" "}
-                                    <a href="mailto:annaoffbesp@gmail.com">annaoffbesp@gmail.com</a>
+                                    <strong>{t("sections.identification.meta.ownerLabel")}</strong>{" "}
+                                    {t("sections.identification.meta.ownerValue")}
                                 </p>
-                                <p><strong>WhatsApp:</strong> +34641189316</p>
-                                <p><strong>Telegram:</strong> @annaF_B</p>
+                                <p>
+                                    <strong>{t("sections.identification.meta.idLabel")}</strong>{" "}
+                                    {t("sections.identification.meta.idValue")}
+                                </p>
+                                <p>
+                                    <strong>{t("sections.identification.meta.addressLabel")}</strong>{" "}
+                                    {t("sections.identification.meta.addressValue")}
+                                </p>
+                                <p>
+                                    <strong>{t("sections.identification.meta.emailLabel")}</strong>{" "}
+                                    <a href={`mailto:${t("sections.identification.meta.emailValue")}`}>
+                                        {t("sections.identification.meta.emailValue")}
+                                    </a>
+                                </p>
+                                <p>
+                                    <strong>{t("sections.identification.meta.whatsappLabel")}</strong>{" "}
+                                    {t("sections.identification.meta.whatsappValue")}
+                                </p>
+                                <p>
+                                    <strong>{t("sections.identification.meta.telegramLabel")}</strong>{" "}
+                                    {t("sections.identification.meta.telegramValue")}
+                                </p>
                             </div>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>2. Objeto</h2>
-                            <p className={styles.text}>
-                                El presente sitio web tiene como finalidad ofrecer información
-                                sobre clases de Método Feldenkrais y permitir el contacto con
-                                personas interesadas.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.purpose.title")}</h2>
+                            <p className={styles.text}>{t("sections.purpose.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>3. Condiciones de uso</h2>
-                            <p className={styles.text}>
-                                El acceso y uso del sitio web atribuye la condición de usuario e
-                                implica la aceptación de las condiciones aquí establecidas.
-                            </p>
-                            <p className={styles.text}>
-                                El usuario se compromete a utilizar el sitio web de forma lícita
-                                y sin causar perjuicios.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.termsOfUse.title")}</h2>
+                            <p className={styles.text}>{t("sections.termsOfUse.text1")}</p>
+                            <p className={styles.text}>{t("sections.termsOfUse.text2")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>4. Propiedad intelectual</h2>
-                            <p className={styles.text}>
-                                Todos los contenidos del sitio web (textos, imágenes, etc.) son
-                                propiedad del titular o se utilizan con autorización, y no pueden
-                                ser reproducidos sin permiso.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.intellectualProperty.title")}</h2>
+                            <p className={styles.text}>{t("sections.intellectualProperty.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>5. Responsabilidad</h2>
+                            <h2 className={styles.heading}>{t("sections.liability.title")}</h2>
+                            <p className={styles.text}>{t("sections.liability.intro")}</p>
                             <ul className={styles.list}>
-                                <li>El uso indebido del contenido del sitio web por parte de los usuarios</li>
-                                <li>Posibles errores técnicos o interrupciones del servicio</li>
-                                <li>Contenidos de enlaces externos, sobre los cuales no tiene control</li>
+                                {liabilityList.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>6. Enlaces</h2>
-                            <p className={styles.text}>
-                                Este sitio web puede contener enlaces a páginas externas. El
-                                titular no se responsabiliza del contenido ni de las políticas de
-                                dichos sitios.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.links.title")}</h2>
+                            <p className={styles.text}>{t("sections.links.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>7. Protección de datos</h2>
-                            <p className={styles.text}>
-                                Los datos personales recogidos a través de este sitio web se
-                                tratarán conforme a la Política de Privacidad.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.dataProtection.title")}</h2>
+                            <p className={styles.text}>{t("sections.dataProtection.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>8. Modificaciones</h2>
-                            <p className={styles.text}>
-                                El titular se reserva el derecho de modificar el contenido del
-                                sitio web sin previo aviso.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.modifications.title")}</h2>
+                            <p className={styles.text}>{t("sections.modifications.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>9. Legislación aplicable</h2>
-                            <p className={styles.text}>
-                                La relación entre el usuario y el titular se regirá por la
-                                legislación española.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.applicableLaw.title")}</h2>
+                            <p className={styles.text}>{t("sections.applicableLaw.text")}</p>
                         </section>
                     </div>
                 </div>

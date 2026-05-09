@@ -1,0 +1,68 @@
+{
+  "title": "Términos y Condiciones",
+  "sections": {
+    "purpose": {
+      "title": "1. Objeto",
+      "text": "Los presentes términos regulan la participación en clases de Método Feldenkrais ofrecidas por el titular."
+    },
+    "serviceNature": {
+      "title": "2. Naturaleza del servicio",
+      "text1": "Las clases tienen carácter educativo y de bienestar.",
+      "text2": "No constituyen un tratamiento médico ni sustituyen la atención sanitaria profesional."
+    },
+    "participation": {
+      "title": "3. Modalidades de participación",
+      "intro": "Se ofrecen las siguientes modalidades:",
+      "items": [
+        "Clases sueltas",
+        "Bonos o abonos de varias sesiones"
+      ],
+      "text": "Las condiciones específicas (precio, duración, número de sesiones) se comunicarán previamente."
+    },
+    "registration": {
+      "title": "4. Inscripción",
+      "text1": "La participación en las clases requiere inscripción previa y confirmación por parte del titular.",
+      "text2": "La inscripción o participación en las clases implica la aceptación de los presentes Términos y Condiciones.",
+      "text3": "La participación de menores de edad requerirá la autorización de sus padres o tutores legales."
+    },
+    "payment": {
+      "title": "5. Forma de pago",
+      "text1": "El pago se realiza de forma presencial o mediante transferencia bancaria, según se acuerde previamente.",
+      "text2": "No se realizan pagos a través del sitio web."
+    },
+    "cancellations": {
+      "title": "6. Cancelaciones y cambios",
+      "text1": "Las condiciones de cancelación y cambio se comunicarán previamente y podrán adaptarse de forma individual.",
+      "text2": "En caso de no asistencia sin aviso previo, la sesión podrá considerarse realizada dentro de un bono o abono.",
+      "text3": "El titular se reserva el derecho de cancelar o reprogramar una clase por causas justificadas, ofreciendo alternativa o compensación."
+    },
+    "passesValidity": {
+      "title": "7. Validez de bonos",
+      "text": "La validez de los bonos será informada en el momento de la compra y no será indefinida."
+    },
+    "participantResponsibility": {
+      "title": "8. Responsabilidad del participante",
+      "intro": "El participante declara:",
+      "items": [
+        "Que se encuentra en condiciones físicas adecuadas para realizar la actividad",
+        "Que informará al titular de cualquier condición relevante (lesiones, dolencias, etc.)"
+      ]
+    },
+    "liability": {
+      "title": "9. Responsabilidad",
+      "text": "El titular no se hace responsable de posibles lesiones derivadas de un uso inadecuado de las indicaciones o de la omisión de información relevante por parte del participante."
+    },
+    "modifications": {
+      "title": "10. Modificaciones",
+      "text": "El titular se reserva el derecho de modificar horarios, condiciones o precios, informando previamente a los participantes."
+    },
+    "applicableLaw": {
+      "title": "11. Legislación aplicable",
+      "text": "Estos términos se rigen por la legislación española."
+    },
+    "dataProtection": {
+      "title": "12. Protección de datos",
+      "text": "Los datos personales facilitados se tratarán conforme a la Política de Privacidad del sitio web."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Terms and Conditions",
+  "sections": {
+    "purpose": {
+      "title": "1. Purpose",
+      "text": "These terms govern participation in classes of the Feldenkrais Method offered by the provider."
+    },
+    "serviceNature": {
+      "title": "2. Nature of the service",
+      "text1": "The classes are educational and wellness-oriented.",
+      "text2": "They do not constitute medical treatment and do not replace professional healthcare."
+    },
+    "participation": {
+      "title": "3. Participation formats",
+      "intro": "The following formats are offered:",
+      "items": [
+        "Single classes",
+        "Packages or multi-session passes"
+      ],
+      "text": "Specific conditions (price, duration, number of sessions) will be communicated in advance."
+    },
+    "registration": {
+      "title": "4. Registration",
+      "text1": "Participation in the classes requires prior registration and confirmation by the provider.",
+      "text2": "Registration or participation in the classes implies acceptance of these Terms and Conditions.",
+      "text3": "Participation of minors requires authorization from their parents or legal guardians."
+    },
+    "payment": {
+      "title": "5. Payment method",
+      "text1": "Payment is made in person or via bank transfer, as agreed in advance.",
+      "text2": "No payments are made through the website."
+    },
+    "cancellations": {
+      "title": "6. Cancellations and changes",
+      "text1": "Cancellation and rescheduling conditions will be communicated in advance and may be adapted individually.",
+      "text2": "In case of non-attendance without prior notice, the session may be considered used within a package or pass.",
+      "text3": "The provider reserves the right to cancel or reschedule a class for justified reasons, offering an alternative or compensation."
+    },
+    "passesValidity": {
+      "title": "7. Validity of passes",
+      "text": "The validity period of packages or passes will be communicated at the time of purchase and will not be indefinite."
+    },
+    "participantResponsibility": {
+      "title": "8. Participant responsibility",
+      "intro": "The participant declares that:",
+      "items": [
+        "they are in adequate physical condition to participate",
+        "they will inform the provider of any relevant condition (injuries, health issues, etc.)"
+      ]
+    },
+    "liability": {
+      "title": "9. Liability",
+      "text": "The provider is not responsible for possible injuries resulting from improper use of the instructions or failure to disclose relevant information by the participant."
+    },
+    "modifications": {
+      "title": "10. Modifications",
+      "text": "The provider reserves the right to modify schedules, conditions, or prices, informing participants in advance."
+    },
+    "applicableLaw": {
+      "title": "11. Applicable law",
+      "text": "These terms are governed by Spanish law."
+    },
+    "dataProtection": {
+      "title": "12. Data protection",
+      "text": "Personal data will be processed in accordance with the website’s Privacy Policy."
+    }
+  }
+}

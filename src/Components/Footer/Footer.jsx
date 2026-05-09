@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
+import { useTranslation } from "react-i18next";
+
 
 function InstagramIcon() {
   return (
@@ -18,23 +20,26 @@ function TelegramIcon() {
 }
 
 function Footer() {
+  const { t } = useTranslation("footer");
+  <nav aria-label={t("ariaLabel")}></nav>
+
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footerInner} container`}>
         <div className={styles.addressBlock}>
           <p className={styles.footerTitle}>© 2026 Gentle Movement Space</p>
 
-          <nav className={styles.legalLinks} aria-label="Legal pages">
+          <nav className={styles.legalLinks} aria-label={t("footer.ariaLabel")}>
             <Link to="/privacy-policy" className={styles.legalLink}>
-              Política de privacidad
+              {t("footer.privacyPolicy")}
             </Link>
             <span className={styles.separator}>|</span>
             <Link to="/legal-notice" className={styles.legalLink}>
-              Aviso legal
+              {t("footer.legalNotice")}
             </Link>
             <span className={styles.separator}>|</span>
             <Link to="/terms-and-conditions" className={styles.legalLink}>
-              Términos y condiciones
+              {t("footer.termsConditions")}
             </Link>
           </nav>
         </div>
@@ -43,7 +48,7 @@ function Footer() {
           <a
             href="https://instagram.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="Instagram"
             className={styles.socialLink}
           >
@@ -52,7 +57,7 @@ function Footer() {
           <a
             href="https://t.me"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="Telegram"
             className={styles.socialLink}
           >

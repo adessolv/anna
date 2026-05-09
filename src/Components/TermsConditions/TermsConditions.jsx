@@ -1,134 +1,99 @@
 import styles from "./TermsConditions.module.css";
+import { useTranslation } from "react-i18next";
 
 const TermsConditions = () => {
+    const { t } = useTranslation("terms");
+
+    const participationItems = t("sections.participation.items", { returnObjects: true });
+    const participantResponsibilityItems = t("sections.participantResponsibility.items", { returnObjects: true });
+
+    const participationList = Array.isArray(participationItems) ? participationItems : [];
+    const participantResponsibilityList = Array.isArray(participantResponsibilityItems)
+        ? participantResponsibilityItems
+        : [];
+
     return (
         <main className={styles.page}>
             <section className={styles.wrapper}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>Términos y Condiciones</h1>
+                    <h1 className={styles.title}>{t("title")}</h1>
 
                     <div className={styles.content}>
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>1. Objeto</h2>
-                            <p className={styles.text}>
-                                Los presentes términos regulan la participación en clases de
-                                Método Feldenkrais ofrecidas por el titular.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.purpose.title")}</h2>
+                            <p className={styles.text}>{t("sections.purpose.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>2. Naturaleza del servicio</h2>
-                            <p className={styles.text}>
-                                Las clases tienen carácter educativo y de bienestar. No
-                                constituyen un tratamiento médico ni sustituyen la atención
-                                sanitaria profesional.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.serviceNature.title")}</h2>
+                            <p className={styles.text}>{t("sections.serviceNature.text1")}</p>
+                            <p className={styles.text}>{t("sections.serviceNature.text2")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>3. Modalidades de participación</h2>
-                            <p className={styles.text}>Se ofrecen las siguientes modalidades:</p>
+                            <h2 className={styles.heading}>{t("sections.participation.title")}</h2>
+                            <p className={styles.text}>{t("sections.participation.intro")}</p>
                             <ul className={styles.list}>
-                                <li>Clases sueltas</li>
-                                <li>Bonos o abonos de varias sesiones</li>
+                                {participationList.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
-                            <p className={styles.text}>
-                                Las condiciones específicas (precio, duración, número de
-                                sesiones) se comunicarán previamente.
-                            </p>
+                            <p className={styles.text}>{t("sections.participation.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>4. Inscripción</h2>
-                            <p className={styles.text}>
-                                La participación en las clases requiere inscripción previa y
-                                confirmación por parte del titular.
-                            </p>
-                            <p className={styles.text}>
-                                La inscripción o participación en las clases implica la
-                                aceptación de los presentes Términos y Condiciones.
-                            </p>
-                            <p className={styles.text}>
-                                La participación de menores de edad requerirá la autorización de
-                                sus padres o tutores legales.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.registration.title")}</h2>
+                            <p className={styles.text}>{t("sections.registration.text1")}</p>
+                            <p className={styles.text}>{t("sections.registration.text2")}</p>
+                            <p className={styles.text}>{t("sections.registration.text3")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>5. Forma de pago</h2>
-                            <p className={styles.text}>
-                                El pago se realiza de forma presencial o mediante transferencia
-                                bancaria, según se acuerde previamente.
-                            </p>
-                            <p className={styles.text}>
-                                No se realizan pagos a través del sitio web.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.payment.title")}</h2>
+                            <p className={styles.text}>{t("sections.payment.text1")}</p>
+                            <p className={styles.text}>{t("sections.payment.text2")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>6. Cancelaciones y cambios</h2>
-                            <p className={styles.text}>
-                                Las condiciones de cancelación y cambio se comunicarán
-                                previamente y podrán adaptarse de forma individual.
-                            </p>
-                            <p className={styles.text}>
-                                En caso de no asistencia sin aviso previo, la sesión podrá
-                                considerarse realizada dentro de un bono o abono.
-                            </p>
-                            <p className={styles.text}>
-                                El titular se reserva el derecho de cancelar o reprogramar una
-                                clase por causas justificadas, ofreciendo alternativa o
-                                compensación.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.cancellations.title")}</h2>
+                            <p className={styles.text}>{t("sections.cancellations.text1")}</p>
+                            <p className={styles.text}>{t("sections.cancellations.text2")}</p>
+                            <p className={styles.text}>{t("sections.cancellations.text3")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>7. Validez de bonos</h2>
-                            <p className={styles.text}>
-                                La validez de los bonos será informada en el momento de la compra
-                                y no será indefinida.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.passesValidity.title")}</h2>
+                            <p className={styles.text}>{t("sections.passesValidity.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>8. Responsabilidad del participante</h2>
-                            <p className={styles.text}>El participante declara:</p>
+                            <h2 className={styles.heading}>{t("sections.participantResponsibility.title")}</h2>
+                            <p className={styles.text}>{t("sections.participantResponsibility.intro")}</p>
                             <ul className={styles.list}>
-                                <li>Que se encuentra en condiciones físicas adecuadas para realizar la actividad</li>
-                                <li>Que informará al titular de cualquier condición relevante (lesiones, dolencias, etc.)</li>
+                                {participantResponsibilityList.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>9. Responsabilidad</h2>
-                            <p className={styles.text}>
-                                El titular no se hace responsable de posibles lesiones derivadas
-                                de un uso inadecuado de las indicaciones o de la omisión de
-                                información relevante por parte del participante.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.liability.title")}</h2>
+                            <p className={styles.text}>{t("sections.liability.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>10. Modificaciones</h2>
-                            <p className={styles.text}>
-                                El titular se reserva el derecho de modificar horarios,
-                                condiciones o precios, informando previamente a los participantes.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.modifications.title")}</h2>
+                            <p className={styles.text}>{t("sections.modifications.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>11. Legislación aplicable</h2>
-                            <p className={styles.text}>
-                                Estos términos se rigen por la legislación española.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.applicableLaw.title")}</h2>
+                            <p className={styles.text}>{t("sections.applicableLaw.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>12. Protección de datos</h2>
-                            <p className={styles.text}>
-                                Los datos personales facilitados se tratarán conforme a la
-                                Política de Privacidad del sitio web.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.dataProtection.title")}</h2>
+                            <p className={styles.text}>{t("sections.dataProtection.text")}</p>
                         </section>
                     </div>
                 </div>

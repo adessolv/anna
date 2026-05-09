@@ -1,0 +1,61 @@
+{
+  "title": "Legal Notice",
+  "sections": {
+    "identification": {
+      "title": "1. Identification details",
+      "intro": "In compliance with applicable regulations, users are informed that this website is owned by:",
+      "meta": {
+        "ownerLabel": "Owner:",
+        "ownerValue": "Anna Afanaseva",
+        "idLabel": "NIF/NIE:",
+        "idValue": "Z2331***Y",
+        "addressLabel": "Address:",
+        "addressValue": "calle Miguel Angel Blanco 62 5A, Oviedo",
+        "emailLabel": "Email:",
+        "emailValue": "annaoffbesp@gmail.com",
+        "whatsappLabel": "WhatsApp:",
+        "whatsappValue": "+34641189316",
+        "telegramLabel": "Telegram:",
+        "telegramValue": "@annaF_B"
+      }
+    },
+    "purpose": {
+      "title": "2. Purpose",
+      "text": "The purpose of this website is to provide information about classes in the Feldenkrais Method and to allow interested persons to get in touch."
+    },
+    "termsOfUse": {
+      "title": "3. Terms of use",
+      "text1": "Access to and use of this website gives the visitor the status of user and implies acceptance of the conditions set out herein.",
+      "text2": "The user undertakes to use the website lawfully and without causing harm."
+    },
+    "intellectualProperty": {
+      "title": "4. Intellectual property",
+      "text": "All website content (texts, images, etc.) is owned by the owner or used with authorization and may not be reproduced without permission."
+    },
+    "liability": {
+      "title": "5. Liability",
+      "intro": "The owner is not responsible for:",
+      "items": [
+        "Improper use of the website content by users",
+        "Possible technical errors or interruptions of the service",
+        "Content of external links over which the owner has no control"
+      ]
+    },
+    "links": {
+      "title": "6. Links",
+      "text": "This website may contain links to external pages. The owner is not responsible for the content or policies of such sites."
+    },
+    "dataProtection": {
+      "title": "7. Data protection",
+      "text": "Personal data collected through this website will be processed in accordance with the Privacy Policy."
+    },
+    "modifications": {
+      "title": "8. Modifications",
+      "text": "The owner reserves the right to modify the content of the website without prior notice."
+    },
+    "applicableLaw": {
+      "title": "9. Applicable law",
+      "text": "The relationship between the user and the owner shall be governed by Spanish law."
+    }
+  }
+}
