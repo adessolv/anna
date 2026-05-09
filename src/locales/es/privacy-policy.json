@@ -1,0 +1,82 @@
+{
+  "title": "Política de Privacidad",
+  "sections": {
+    "controller": {
+      "title": "1. Responsable del tratamiento",
+      "meta": {
+        "ownerLabel": "Titular:",
+        "ownerValue": "Anna Afanaseva",
+        "idLabel": "NIF/NIE:",
+        "idValue": "Z2331***Y",
+        "addressLabel": "Domicilio:",
+        "addressValue": "calle Miguel Angel Blanco 62 5A, Oviedo",
+        "emailLabel": "Correo electrónico:",
+        "emailValue": "annaoffbesp@gmail.com"
+      }
+    },
+    "collectedData": {
+      "title": "2. Datos personales recogidos",
+      "intro": "Se podrán recoger los siguientes datos personales:",
+      "items": [
+        "Nombre",
+        "Dirección de correo electrónico",
+        "Número de teléfono",
+        "Cualquier otra información que el usuario facilite voluntariamente"
+      ],
+      "text": "Los datos se recogen a través de formularios de contacto disponibles en el sitio web."
+    },
+    "purpose": {
+      "title": "3. Finalidad del tratamiento de datos",
+      "intro": "Los datos personales facilitados serán utilizados para:",
+      "items": [
+        "Gestionar solicitudes de información",
+        "Organizar y gestionar la participación en clases de Método Feldenkrais",
+        "Contactar con el usuario en relación con los servicios ofrecidos",
+        "Cumplir con obligaciones legales aplicables"
+      ]
+    },
+    "legalBasis": {
+      "title": "4. Base legal",
+      "intro": "El tratamiento de los datos se basa en:",
+      "items": [
+        "El consentimiento del usuario",
+        "La ejecución de una relación contractual (en caso de inscripción en clases)"
+      ]
+    },
+    "retention": {
+      "title": "5. Conservación de datos",
+      "text": "Los datos se conservarán mientras se mantenga la relación con el usuario y durante los plazos necesarios para cumplir con las obligaciones legales."
+    },
+    "recipients": {
+      "title": "6. Destinatarios",
+      "text1": "Los datos no se cederán a terceros, salvo obligación legal o cuando sea necesario para la prestación del servicio (por ejemplo, herramientas de gestión o comunicación).",
+      "text2": "No se prevén transferencias internacionales de datos."
+    },
+    "userRights": {
+      "title": "7. Derechos del usuario",
+      "intro": "El usuario puede ejercer sus derechos de:",
+      "items": [
+        "Acceso",
+        "Rectificación",
+        "Supresión",
+        "Limitación",
+        "Oposición"
+      ],
+      "requestPrefix": "Enviando una solicitud a:",
+      "requestEmail": "annaoffbesp@gmail.com",
+      "text": "El usuario tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD)."
+    },
+    "requiredData": {
+      "title": "8. Carácter obligatorio de los datos",
+      "text": "El suministro de los datos es voluntario, pero necesario para poder responder a las solicitudes del usuario."
+    },
+    "security": {
+      "title": "9. Seguridad",
+      "text": "Se aplican medidas técnicas y organizativas adecuadas para garantizar la seguridad de los datos personales."
+    },
+    "changes": {
+      "title": "10. Cambios en la política",
+      "text": "Esta política puede ser actualizada en cualquier momento para adaptarse a cambios normativos o en el servicio."
+    }
+  }
+}

@@ -25,6 +25,8 @@ import classes_en from "./locales/en/classes.json";
 import classes_ru from "./locales/ru/classes.json";
 import classes_es from "./locales/es/classes.json";
 
+import privacy_es from "./locales/es/privacy-policy.json";
+
 i18n.use(initReactI18next).init({
   resources: {
     en: {
@@ -50,11 +52,20 @@ i18n.use(initReactI18next).init({
       about: about_es,
       booking: booking_es,
       classes: classes_es,
+      "privacy-policy": privacy_es,
     },
   },
-  lng: "en",
-  fallbackLng: "en",
-  ns: ["translation", "hero"],
+  lng: "es",
+  fallbackLng: "es",
+  ns: [
+    "translation",
+    "hero",
+    "method",
+    "about",
+    "booking",
+    "classes",
+    "privacy-policy",
+  ],
   defaultNS: "translation",
   interpolation: {
     escapeValue: false,

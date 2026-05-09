@@ -1,137 +1,146 @@
+import { useTranslation } from "react-i18next";
 import styles from "./PrivacyPolicy.module.css";
 
 const PrivacyPolicy = () => {
+    const { t } = useTranslation("privacy-policy");
+
+    const getList = (key) => {
+        const value = t(key, { returnObjects: true });
+        return Array.isArray(value) ? value : [];
+    };
+
+    const collectedDataItems = getList("sections.collectedData.items");
+    const purposeItems = getList("sections.purpose.items");
+    const legalBasisItems = getList("sections.legalBasis.items");
+    const userRightsItems = getList("sections.userRights.items");
+
     return (
         <main className={styles.page}>
             <section className={styles.wrapper}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>Política de Privacidad</h1>
+                    <h1 className={styles.title}>{t("title")}</h1>
 
                     <div className={styles.content}>
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>1. Responsable del tratamiento</h2>
+                            <h2 className={styles.heading}>
+                                {t("sections.controller.title")}
+                            </h2>
+
                             <div className={styles.meta}>
-                                <p><strong>Titular:</strong> Anna Afanaseva</p>
-                                <p><strong>NIF/NIE:</strong> Z2331***Y</p>
-                                <p><strong>Domicilio:</strong> calle Miguel Angel Blanco 62 5A, Oviedo</p>
                                 <p>
-                                    <strong>Correo electrónico:</strong>{" "}
-                                    <a href="mailto:annaoffbesp@gmail.com">annaoffbesp@gmail.com</a>
+                                    <strong>{t("sections.controller.meta.ownerLabel")}</strong>{" "}
+                                    {t("sections.controller.meta.ownerValue")}
+                                </p>
+                                <p>
+                                    <strong>{t("sections.controller.meta.idLabel")}</strong>{" "}
+                                    {t("sections.controller.meta.idValue")}
+                                </p>
+                                <p>
+                                    <strong>{t("sections.controller.meta.addressLabel")}</strong>{" "}
+                                    {t("sections.controller.meta.addressValue")}
+                                </p>
+                                <p>
+                                    <strong>{t("sections.controller.meta.emailLabel")}</strong>{" "}
+                                    <a href={`mailto:${t("sections.controller.meta.emailValue")}`}>
+                                        {t("sections.controller.meta.emailValue")}
+                                    </a>
                                 </p>
                             </div>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>2. Datos personales recogidos</h2>
+                            <h2 className={styles.heading}>
+                                {t("sections.collectedData.title")}
+                            </h2>
                             <p className={styles.text}>
-                                Se podrán recoger los siguientes datos personales:
+                                {t("sections.collectedData.intro")}
                             </p>
                             <ul className={styles.list}>
-                                <li>Nombre</li>
-                                <li>Dirección de correo electrónico</li>
-                                <li>Número de teléfono</li>
-                                <li>Cualquier otra información que el usuario facilite voluntariamente</li>
+                                {collectedDataItems.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                             <p className={styles.text}>
-                                Los datos se recogen a través de formularios de contacto
-                                disponibles en el sitio web.
+                                {t("sections.collectedData.text")}
                             </p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>3. Finalidad del tratamiento de datos</h2>
-                            <p className={styles.text}>
-                                Los datos personales facilitados serán utilizados para:
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.purpose.title")}</h2>
+                            <p className={styles.text}>{t("sections.purpose.intro")}</p>
                             <ul className={styles.list}>
-                                <li>Gestionar solicitudes de información</li>
-                                <li>Organizar y gestionar la participación en clases de Método Feldenkrais</li>
-                                <li>Contactar con el usuario en relación con los servicios ofrecidos</li>
-                                <li>Cumplir con obligaciones legales aplicables</li>
+                                {purposeItems.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>4. Base legal</h2>
-                            <p className={styles.text}>
-                                El tratamiento de los datos se basa en:
-                            </p>
+                            <h2 className={styles.heading}>
+                                {t("sections.legalBasis.title")}
+                            </h2>
+                            <p className={styles.text}>{t("sections.legalBasis.intro")}</p>
                             <ul className={styles.list}>
-                                <li>El consentimiento del usuario</li>
-                                <li>La ejecución de una relación contractual (en caso de inscripción en clases)</li>
+                                {legalBasisItems.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>5. Conservación de datos</h2>
-                            <p className={styles.text}>
-                                Los datos se conservarán mientras se mantenga la relación con el
-                                usuario y durante los plazos necesarios para cumplir con las
-                                obligaciones legales.
-                            </p>
+                            <h2 className={styles.heading}>
+                                {t("sections.retention.title")}
+                            </h2>
+                            <p className={styles.text}>{t("sections.retention.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>6. Destinatarios</h2>
-                            <p className={styles.text}>
-                                Los datos no se cederán a terceros, salvo obligación legal o
-                                cuando sea necesario para la prestación del servicio (por
-                                ejemplo, herramientas de gestión o comunicación).
-                            </p>
-                            <p className={styles.text}>
-                                No se prevén transferencias internacionales de datos.
-                            </p>
+                            <h2 className={styles.heading}>
+                                {t("sections.recipients.title")}
+                            </h2>
+                            <p className={styles.text}>{t("sections.recipients.text1")}</p>
+                            <p className={styles.text}>{t("sections.recipients.text2")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>7. Derechos del usuario</h2>
-                            <p className={styles.text}>
-                                El usuario puede ejercer sus derechos de:
-                            </p>
+                            <h2 className={styles.heading}>
+                                {t("sections.userRights.title")}
+                            </h2>
+                            <p className={styles.text}>{t("sections.userRights.intro")}</p>
                             <ul className={styles.list}>
-                                <li>Acceso</li>
-                                <li>Rectificación</li>
-                                <li>Supresión</li>
-                                <li>Limitación</li>
-                                <li>Oposición</li>
+                                {userRightsItems.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                             <p className={styles.text}>
-                                Enviando una solicitud a:{" "}
+                                {t("sections.userRights.requestPrefix")}{" "}
                                 <a
-                                    href="mailto:annaoffbesp@gmail.com"
+                                    href={`mailto:${t("sections.userRights.requestEmail")}`}
                                     className={styles.inlineLink}
                                 >
-                                    annaoffbesp@gmail.com
+                                    {t("sections.userRights.requestEmail")}
                                 </a>
                             </p>
-                            <p className={styles.text}>
-                                El usuario tiene derecho a presentar una reclamación ante la
-                                Agencia Española de Protección de Datos (AEPD).
-                            </p>
+                            <p className={styles.text}>{t("sections.userRights.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>8. Carácter obligatorio de los datos</h2>
-                            <p className={styles.text}>
-                                El suministro de los datos es voluntario, pero necesario para
-                                poder responder a las solicitudes del usuario.
-                            </p>
+                            <h2 className={styles.heading}>
+                                {t("sections.requiredData.title")}
+                            </h2>
+                            <p className={styles.text}>{t("sections.requiredData.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>9. Seguridad</h2>
-                            <p className={styles.text}>
-                                Se aplican medidas técnicas y organizativas adecuadas para
-                                garantizar la seguridad de los datos personales.
-                            </p>
+                            <h2 className={styles.heading}>
+                                {t("sections.security.title")}
+                            </h2>
+                            <p className={styles.text}>{t("sections.security.text")}</p>
                         </section>
 
                         <section className={styles.block}>
-                            <h2 className={styles.heading}>10. Cambios en la política</h2>
-                            <p className={styles.text}>
-                                Esta política puede ser actualizada en cualquier momento para
-                                adaptarse a cambios normativos o en el servicio.
-                            </p>
+                            <h2 className={styles.heading}>{t("sections.changes.title")}</h2>
+                            <p className={styles.text}>{t("sections.changes.text")}</p>
                         </section>
                     </div>
                 </div>
