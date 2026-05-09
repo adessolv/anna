@@ -56,7 +56,7 @@
   color: var(--color-text-muted);
 }
 
-.text+.text {
+.text + .text {
   margin-top: 12px;
 }
 
