@@ -92,7 +92,7 @@
   border-radius: 50%;
 }
 
-.avatar + .avatar {
+.avatar+.avatar {
   margin-left: -12px;
 }
 
