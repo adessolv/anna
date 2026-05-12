@@ -1,5 +1,4 @@
 .page {
-  padding: 56px 0 88px;
   background: var(--color-bg);
   color: var(--color-text);
 }
@@ -11,7 +10,8 @@
 .container {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 48px 32px;
+
 }
 
 .title {
@@ -42,7 +42,7 @@
 
 .heading {
   margin: 0 0 12px;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.35;
   font-weight: 600;
   color: var(--color-text);
