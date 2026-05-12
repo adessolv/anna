@@ -26,16 +26,6 @@ const Hero = () => {
             <a href="#booking" className={styles.button}>
               {t("cta")}
             </a>
-
-            <div className={styles.students}>
-              <div className={styles.avatars}>
-                <span className={`${styles.avatar} ${styles.avatar1}`}></span>
-                <span className={`${styles.avatar} ${styles.avatar2}`}></span>
-                <span className={`${styles.avatar} ${styles.avatar3}`}></span>
-              </div>
-
-              <span className={styles.studentsText}>{t("students")}</span>
-            </div>
           </div>
         </motion.div>
 
