@@ -29,7 +29,7 @@ const Lessons = () => {
 
                 <div className={styles.media}>
                     <img
-                        src="classes.jpg"
+                        src="classes.png"
                         alt={t("imageAlt")}
                         className={styles.image}
                         loading="lazy"
