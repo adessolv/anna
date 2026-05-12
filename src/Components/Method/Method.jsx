@@ -17,29 +17,6 @@ const Method = () => {
             <p>{t("text.first")}</p>
             <p>{t("text.second")}</p>
           </div>
-
-          <div className={styles.reviews}>
-            <h3 className={styles.reviewsLabel}>{t("reviewsLabel")}</h3>
-
-            <div className={styles.reviewsList}>
-              {reviews.map((item, index) => (
-                <motion.article
-                  key={`${item.name}-${index}`}
-                  className={styles.reviewCard}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: index * 0.08 }}
-                >
-                  <div className={styles.reviewMeta}>
-                    <span className={styles.reviewName}>{item.name}</span>
-                    <span className={styles.reviewAge}>{item.age}</span>
-                  </div>
-                  <p className={styles.reviewText}>{item.text}</p>
-                </motion.article>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className={styles.sidebar}>

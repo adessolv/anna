@@ -29,7 +29,7 @@ const Lessons = () => {
 
                 <div className={styles.media}>
                     <img
-                        src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/a435070b1231e900e09be073c2ee4af9a01d5f40.jpg"
+                        src="classes.jpg"
                         alt={t("imageAlt")}
                         className={styles.image}
                         loading="lazy"

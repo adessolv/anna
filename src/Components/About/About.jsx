@@ -16,10 +16,6 @@ const About = () => {
                             referrerPolicy="no-referrer"
                         />
                     </div>
-
-                    <div className={styles.quoteCard}>
-                        <p className={styles.quoteText}>{t("quote")}</p>
-                    </div>
                 </div>
 
                 <div className={styles.content}>
