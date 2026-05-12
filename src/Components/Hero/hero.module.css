@@ -71,7 +71,7 @@
 }
 
 .button:hover {
-  background: var(--artistic-accent-hover, #9b6848);
+  background: var(--artistic-accent-hover, #a78b8b);
   transform: translateY(-2px);
 }
 
@@ -92,7 +92,7 @@
   border-radius: 50%;
 }
 
-.avatar + .avatar {
+.avatar+.avatar {
   margin-left: -12px;
 }
 
