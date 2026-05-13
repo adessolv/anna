@@ -6,18 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-dev-helper": "vite --port $PORT",
+    "vdev": "vercel dev --local-config ./vercel-dev.json"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "i18next": "^26.0.6",
     "motion": "^12.38.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-email": "^6.1.1",
     "react-i18next": "^17.0.4",
     "react-router-dom": "^7.14.2",
-    "resend": "^6.12.3"
+    "resend": "^6.12.3",
+    "vercel": "^50.41.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -28,7 +30,6 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
-    "vercel": "^50.41.0",
     "vite": "^8.0.10"
   }
 }
