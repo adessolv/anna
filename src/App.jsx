@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Method from "./Components/Method/Method";
 import About from "./Components/About/About";
+import Experience from "./Components/Experience/Experience";
 import BookingForm from "./Components/BookingForm/BookingForm";
 import Lessons from "./Components/Lessons/Lessons";
 import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
@@ -18,6 +19,7 @@ function HomePage() {
       <Hero />
       <Method />
       <About />
+      <Experience />
       <Lessons />
       <BookingForm />
     </main>
