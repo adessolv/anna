@@ -67,7 +67,7 @@ const BookingForm = () => {
     };
 
     return (
-        <section id="booking" className={styles.section}>
+        <section id="contacts" className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h2 className={styles.title}>
