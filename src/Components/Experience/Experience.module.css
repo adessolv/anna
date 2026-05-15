@@ -42,7 +42,7 @@
 }
 
 .link {
-  color: var(--color-artistic-accent, #8b6f47);
+  color: var(--color-artistic-accent);
   text-decoration: none;
   border-bottom: 1px solid rgba(139, 111, 71, 0.35);
   transition:
@@ -90,14 +90,14 @@
   font-size: 32px;
   line-height: 1;
   font-family: serif;
-  color: var(--color-artistic-ink, #1f1b16);
+  color: var(--color-artistic-ink);
 }
 
 .statLabel {
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-artistic-muted, #a8a29e);
+  color: var(--color-artistic-muted);
 }
 
 @media (max-width: 1024px) {

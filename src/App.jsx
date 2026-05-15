@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useSectionScroll } from "./hooks/useSectionScroll";
 import Header from "./Components/Header/Header";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
@@ -13,6 +14,8 @@ import LegalNotice from "./Components/LegalNotice/LegalNotice";
 import TermsConditions from "./Components/TermsConditions/TermsConditions";
 
 function HomePage() {
+  useSectionScroll();
+
   return (
     <main className="container appContent">
       <Header />

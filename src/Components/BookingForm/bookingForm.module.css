@@ -25,7 +25,7 @@
   line-height: 1.05;
   font-weight: 300;
   font-family: serif;
-  color: var(--color-artistic-ink, #1f1b16);
+  color: var(--color-artistic-ink);
 }
 
 .accent {
@@ -64,7 +64,7 @@
   padding: 10px 0;
   font-size: 14px;
   line-height: 1.4;
-  color: var(--color-artistic-ink, #1f1b16);
+  color: var(--color-artistic-ink);
   outline: none;
   transition:
     border-color 0.25s ease,
