@@ -1,0 +1,23 @@
+{
+  "title": "Formación y experiencia profesional",
+  "imageAlt": "Práctica del Método Feldenkrais",
+  "text": {
+    "first": {
+      "before": "Desde octubre de 2019 hasta mayo de 2024 completé el programa de formación “Moscú 1” en el",
+      "after": "y me certifiqué como practicante del Método Feldenkrais."
+    },
+    "second": "Desde 2021 imparto clases grupales de Autoconciencia a través del Movimiento® (ATM), y desde 2024 también ofrezco sesiones individuales.",
+    "third": "Continúo formándome y desarrollándome profesionalmente, participando en seminarios de posgrado y formaciones complementarias.",
+    "fourth": "Cuanto más profundizo en el método, más me sorprende y me inspira."
+  },
+  "stats": {
+    "groupLessons": {
+      "value": "desde 2021",
+      "label": "Clases grupales"
+    },
+    "individualWork": {
+      "value": "desde 2024",
+      "label": "Sesiones individuales"
+    }
+  }
+}

@@ -42,6 +42,7 @@ function Header() {
             <ul className={styles.headerNavList}>
               <NavItem item={t("method")} href="#method" />
               <NavItem item={t("about")} href="#about" />
+              <NavItem item={t("experience")} href="#experience" />
               <NavItem item={t("classes")} href="#classes" />
               <NavItem item={t("contacts")} href="#contacts" />
             </ul>

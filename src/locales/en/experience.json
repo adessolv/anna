@@ -1,0 +1,23 @@
+{
+  "title": "Education and Professional Experience",
+  "imageAlt": "Feldenkrais Method practice",
+  "text": {
+    "first": {
+      "before": "From October 2019 to May 2024, I completed the “Moscow 1” training program at",
+      "after": "and became a certified Feldenkrais practitioner."
+    },
+    "second": "Since 2021, I have been teaching group classes of Awareness Through Movement® (ATM), and since 2024 I have also been offering individual sessions.",
+    "third": "I continue to study and grow professionally through postgraduate seminars and additional training programs.",
+    "fourth": "The deeper I go into the method, the more it continues to surprise and inspire me."
+  },
+  "stats": {
+    "groupLessons": {
+      "value": "since 2021",
+      "label": "Group classes"
+    },
+    "individualWork": {
+      "value": "since 2024",
+      "label": "Individual sessions"
+    }
+  }
+}

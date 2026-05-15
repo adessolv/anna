@@ -8,6 +8,15 @@ const Lessons = () => {
     return (
         <section id="classes" className={styles.section}>
             <div className={styles.container}>
+                <div className={styles.media}>
+                    <img
+                        src="classes.png"
+                        alt={t("imageAlt")}
+                        className={styles.image}
+                        loading="lazy"
+                    />
+                </div>
+
                 <div className={styles.content}>
                     <h2 className={styles.title}>{t("title")}</h2>
 
@@ -25,15 +34,6 @@ const Lessons = () => {
                             ))}
                         </div>
                     </div>
-                </div>
-
-                <div className={styles.media}>
-                    <img
-                        src="classes.png"
-                        alt={t("imageAlt")}
-                        className={styles.image}
-                        loading="lazy"
-                    />
                 </div>
             </div>
         </section>

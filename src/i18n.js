@@ -42,6 +42,8 @@ import terms_en from "./locales/en/terms.json";
 import terms_ru from "./locales/ru/terms.json";
 
 import exp_ru from "./locales/ru/experience.json";
+import exp_en from "./locales/en/experience.json";
+import exp_es from "./locales/es/experience.json";
 
 import { footer } from "motion/react-client";
 
@@ -58,6 +60,7 @@ i18n.use(initReactI18next).init({
       footer: footer_en,
       legal: legal_en,
       terms: terms_en,
+      experience: exp_en,
     },
     ru: {
       translation: ru,
@@ -83,6 +86,7 @@ i18n.use(initReactI18next).init({
       footer: footer_es,
       legal: legal_es,
       terms: terms_es,
+      experience: exp_es,
     },
   },
   lng: "es",
