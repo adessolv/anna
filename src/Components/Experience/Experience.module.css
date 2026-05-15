@@ -21,11 +21,11 @@
 
 .title {
   margin: 0;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 300;
+  font-size: clamp(34px, 3.2vw, 46px);
+  line-height: 1.05;
+  font-weight: 400;
   font-family: serif;
-  color: var(--color-artistic-ink, #1f1b16);
+  color: var(--color-artistic-ink);
 }
 
 .textBlock {
@@ -36,9 +36,9 @@
 
 .textBlock p {
   margin: 0;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #78716c;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
 }
 
 .link {
