@@ -1,6 +1,6 @@
 .page {
-  background: var(--color-bg, #f7f6f2);
-  color: var(--color-text, #28251d);
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 .wrapper {
@@ -20,7 +20,7 @@
   line-height: 1.05;
   font-weight: 400;
   letter-spacing: -0.03em;
-  color: var(--color-text, #28251d);
+  color: var(--color-text);
 }
 
 .content {
@@ -44,7 +44,8 @@
   font-size: 1.25rem;
   line-height: 1.35;
   font-weight: 600;
-  color: var(--color-text, #28251d);
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
 }
 
 .text {
@@ -52,10 +53,10 @@
   max-width: 72ch;
   font-size: 1rem;
   line-height: 1.85;
-  color: var(--color-text-muted, #7a7974);
+  color: var(--color-text-muted);
 }
 
-.text+.text {
+.text + .text {
   margin-top: 12px;
 }
 
@@ -74,11 +75,11 @@
   margin: 0;
   font-size: 0.98rem;
   line-height: 1.75;
-  color: var(--color-text-muted, #7a7974);
+  color: var(--color-text-muted);
 }
 
 .meta strong {
-  color: var(--color-text, #28251d);
+  color: var(--color-text);
   font-weight: 600;
 }
 
@@ -103,7 +104,7 @@
   padding-left: 18px;
   font-size: 1rem;
   line-height: 1.8;
-  color: var(--color-text-muted, #7a7974);
+  color: var(--color-text-muted);
 }
 
 .list li::before {
@@ -111,7 +112,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--color-text, #28251d);
+  color: var(--color-text);
   line-height: 1.8;
 }
 
