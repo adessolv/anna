@@ -1,3 +1,4 @@
+import Header from "../Header/Header";
 import styles from "./LegalNotice.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -12,6 +13,7 @@ const LegalNotice = () => {
 
     return (
         <main className={styles.page}>
+            <Header />
             <section className={styles.wrapper}>
                 <div className={styles.container}>
                     <h1 className={styles.title}>{t("title")}</h1>
