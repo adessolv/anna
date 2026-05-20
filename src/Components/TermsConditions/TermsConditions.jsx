@@ -1,4 +1,3 @@
-import Header from "../Header/Header";
 import styles from "./TermsConditions.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -15,7 +14,6 @@ const TermsConditions = () => {
 
     return (
         <main className={styles.page}>
-            <Header />
             <section className={styles.wrapper}>
                 <div className={styles.container}>
                     <h1 className={styles.title}>{t("title")}</h1>

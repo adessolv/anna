@@ -5,7 +5,6 @@ import styles from "./method.module.css";
 const Method = () => {
   const { t } = useTranslation("method");
   const groups = t("groups.items", { returnObjects: true });
-  const reviews = t("reviews", { returnObjects: true });
 
   return (
     <section id="method" className={styles.section}>

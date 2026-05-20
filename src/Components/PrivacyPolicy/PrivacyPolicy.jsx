@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import styles from "./PrivacyPolicy.module.css";
-import Header from "../Header/Header";
 
 const PrivacyPolicy = () => {
     const { t } = useTranslation("privacy-policy");
@@ -17,7 +16,6 @@ const PrivacyPolicy = () => {
 
     return (
         <main className={styles.page}>
-            <Header />
             <section className={styles.wrapper}>
                 <div className={styles.container}>
                     <h1 className={styles.title}>{t("title")}</h1>
