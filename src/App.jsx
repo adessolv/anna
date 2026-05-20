@@ -18,7 +18,6 @@ function HomePage() {
 
   return (
     <main className="container appContent">
-      <Header />
       <Hero />
       <Method />
       <About />
@@ -33,6 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="appShell">
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

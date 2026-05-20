@@ -126,7 +126,7 @@
   margin-left: auto;
   padding: 40px 38px 40px;
   border-radius: 36px;
-  background: #474927;
+  background: var(--color-dark-green);
   color: #f5f2eb;
   box-shadow: 0 18px 44px rgba(28, 24, 16, 0.16);
 }
@@ -220,6 +220,10 @@
   .container {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .title {
+    white-space: unset;
   }
 
   .groupsCard {
