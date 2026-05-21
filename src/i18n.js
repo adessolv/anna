@@ -45,7 +45,7 @@ import exp_ru from "./locales/ru/experience.json";
 import exp_en from "./locales/en/experience.json";
 import exp_es from "./locales/es/experience.json";
 
-import { footer } from "motion/react-client";
+// import { footer } from "motion/react-client";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -89,8 +89,8 @@ i18n.use(initReactI18next).init({
       experience: exp_es,
     },
   },
-  lng: "es",
-  fallbackLng: "es",
+  lng: "en",
+  fallbackLng: "en",
   ns: [
     "translation",
     "hero",

@@ -19,6 +19,22 @@ function TelegramIcon() {
   );
 }
 
+function PhoneIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M7.05 2.5A2.55 2.55 0 0 0 4.5 5.05c0 7.98 6.47 14.45 14.45 14.45a2.55 2.55 0 0 0 2.55-2.55v-2.02a1.5 1.5 0 0 0-1.08-1.44l-3.28-.94a1.5 1.5 0 0 0-1.53.4l-1.43 1.47a11.55 11.55 0 0 1-4.6-4.6l1.47-1.43a1.5 1.5 0 0 0 .4-1.53l-.94-3.28A1.5 1.5 0 0 0 9.07 2.5H7.05Zm0 1.8h1.72l.82 2.86-1.73 1.68a1.5 1.5 0 0 0-.3 1.72 13.35 13.35 0 0 0 5.88 5.88 1.5 1.5 0 0 0 1.72-.3l1.68-1.73 2.86.82v1.72a.75.75 0 0 1-.75.75C11.96 18.7 5.3 12.04 5.3 5.05a.75.75 0 0 1 .75-.75Z" />
+    </svg>
+  );
+}
+
+function EmailIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M5.75 4h12.5A3.75 3.75 0 0 1 22 7.75v8.5A3.75 3.75 0 0 1 18.25 20H5.75A3.75 3.75 0 0 1 2 16.25v-8.5A3.75 3.75 0 0 1 5.75 4Zm0 1.8A1.95 1.95 0 0 0 3.8 7.75v.19l8.2 5.3 8.2-5.3v-.19a1.95 1.95 0 0 0-1.95-1.95H5.75Zm14.45 4.28-7.71 4.98a.9.9 0 0 1-.98 0L3.8 10.08v6.17a1.95 1.95 0 0 0 1.95 1.95h12.5a1.95 1.95 0 0 0 1.95-1.95v-6.17Z" />
+    </svg>
+  );
+}
+
 function Footer() {
   const { t } = useTranslation("footer");
   <nav aria-label={t("ariaLabel")}></nav>
@@ -46,7 +62,16 @@ function Footer() {
 
         <div className={styles.socials}>
           <a
-            href="https://instagram.com"
+            href="tel:+34641189316"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Phone number"
+            className={styles.socialLink}
+          >
+            <PhoneIcon />
+          </a>
+          <a
+            href="https://www.instagram.com/gentle.movement.space?igsh=MXlvd2VwOWcwOWRl"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -55,7 +80,7 @@ function Footer() {
             <InstagramIcon />
           </a>
           <a
-            href="https://t.me"
+            href="https://t.me/AnnaF_B"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Telegram"
@@ -63,9 +88,18 @@ function Footer() {
           >
             <TelegramIcon />
           </a>
+          <a
+            href="mailto:annaoffbesp@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="E-mail"
+            className={styles.socialLink}
+          >
+            <EmailIcon />
+          </a>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }
 

@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useSectionScroll } from "./hooks/useSectionScroll";
+// import { useSectionScroll } from "./hooks/useSectionScroll";
 import Header from "./Components/Header/Header";
-import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Method from "./Components/Method/Method";
@@ -12,9 +11,10 @@ import Lessons from "./Components/Lessons/Lessons";
 import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
 import LegalNotice from "./Components/LegalNotice/LegalNotice";
 import TermsConditions from "./Components/TermsConditions/TermsConditions";
+import "./App.css";
 
 function HomePage() {
-  useSectionScroll();
+  // useSectionScroll();
 
   return (
     <main className="container appContent">
