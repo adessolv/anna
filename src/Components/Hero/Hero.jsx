@@ -37,7 +37,7 @@ const Hero = () => {
         >
           <div className={styles.imageWrap}>
             <img
-              src="./artistic-movement.jpg"
+              src="./b7393890-50ba-44f6-8ae8-66ec96015902.png"
               alt={t("imageAlt")}
               className={styles.image}
               referrerPolicy="no-referrer"
