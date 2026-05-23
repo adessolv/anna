@@ -261,6 +261,7 @@
 
   .textBlock {
     gap: 18px;
+    text-align: justify;
   }
 
   .textBlock p {
