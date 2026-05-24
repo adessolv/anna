@@ -16,7 +16,7 @@ export function useSectionScroll() {
 
   useEffect(() => {
     // Не применять на мобильных (touch-устройства)
-    const isTouchDevice = () => window.matchMedia("(hover: none)").matches;
+    // const isTouchDevice = () => window.matchMedia("(hover: none)").matches;
 
     const getClosestSectionIndex = () => {
       const scrollY = window.scrollY;

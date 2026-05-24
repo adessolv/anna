@@ -88,7 +88,7 @@
 }
 
 .image {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
