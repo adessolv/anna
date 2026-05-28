@@ -42,7 +42,7 @@ const Method = () => {
               ))}
             </div>
 
-            <a href="#booking" className={styles.groupsButton}>
+            <a href="#contacts" className={styles.groupsButton}>
               {t("groups.button")}
             </a>
           </div>

@@ -23,7 +23,7 @@ const Hero = () => {
           <p className={styles.text}>{t("description")}</p>
 
           <div className={styles.actions}>
-            <a href="#booking" className={styles.button}>
+            <a href="#contacts" className={styles.button}>
               {t("cta")}
             </a>
           </div>
