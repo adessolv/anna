@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { useSectionScroll } from "./hooks/useSectionScroll";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
@@ -41,6 +42,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 }
