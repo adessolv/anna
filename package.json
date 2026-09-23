@@ -11,6 +11,7 @@
     "vdev": "vercel dev --local-config ./vercel-dev.json"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "dotenv": "^17.4.2",
     "i18next": "^26.0.6",
     "motion": "^12.38.0",
